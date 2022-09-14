@@ -23,11 +23,16 @@
 				line-height: 2.35em;
 				text-align: center;
 				width: 2.35em;
+				user-select: none;
+				-webkit-user-select: none; /*Safari*/
+				-moz-user-select: none; /*Firefox*/
 			}
 			img:hover{
 				-webkit-animation: rotate-center 0.6s ease-in-out both;
 	        animation: rotate-center 0.6s ease-in-out both;
-			background-color: red($color: #000000)
+			user-select: none;
+			-webkit-user-select: none; /*Safari*/
+			-moz-user-select: none; /*Firefox*/
 			}
 		}
 
@@ -116,6 +121,9 @@
 			line-height: 2;
 			text-transform: uppercase;
 			cursor: pointer;
+			user-select: none;
+			-webkit-user-select: none; /*Safari*/
+			-moz-user-select: none; /*Firefox*/
 		}
 
 		@include breakpoint('<=large') {
