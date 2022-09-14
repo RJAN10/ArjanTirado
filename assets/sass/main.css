@@ -3192,7 +3192,7 @@ body.is-preload #banner p {
     margin: 0 1.75em 2em 0;
   }
   .wrapper.spotlight:nth-child(2n-1) .image {
-    margin: 0 0 2em 1.75em;
+    margin: 30px 0 2em 1.75em;
   }
 }
 @media screen and (max-width: 480px) {
