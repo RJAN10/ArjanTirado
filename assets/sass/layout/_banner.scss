@@ -6,7 +6,6 @@
 			margin: 0 auto;
 			width: _size(inner);
 		}
-
 		.logo {
 			@include vendor('transition', (
 				'opacity 2s ease',
@@ -15,19 +14,43 @@
 			@include vendor('transform', 'translateY(0)');
 			opacity: 1;
 			// margin: 0 0 (_size(element-margin) * 0.65) 0;
-
 			img {
 				border-radius: 100%;
 				border: solid 2px _palette(border);
-				cursor: default;
+				cursor: pointer;
 				display: inline-block;
-				height: 2.25em;
+				height: 2.35em;
 				line-height: 2.35em;
 				text-align: center;
 				width: 2.35em;
 			}
+			img:hover{
+				-webkit-animation: rotate-center 0.6s ease-in-out both;
+	        animation: rotate-center 0.6s ease-in-out both;
+			background-color: red($color: #000000)
+			}
 		}
 
+		@-webkit-keyframes rotate-center {
+			0% {
+			  -webkit-transform: rotate(0);
+					  transform: rotate(0);
+			}
+			100% {
+			  -webkit-transform: rotate(360deg);
+					  transform: rotate(360deg);
+			}
+		  }
+		  @keyframes rotate-center {
+			0% {
+			  -webkit-transform: rotate(0);
+					  transform: rotate(0);
+			}
+			100% {
+			  -webkit-transform: rotate(360deg);
+					  transform: rotate(360deg);
+			}
+		  }
 		img {
 			@include vendor('transition', (
 				'opacity 0.5s ease',

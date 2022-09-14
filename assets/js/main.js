@@ -138,9 +138,22 @@
 
 })(jQuery);
 
-const globalnav = document.querySelector('.navbar')
-fetch('/navbar.html')
-.then(res=>res.text())
-.then(data=>{
-	globalnav.innerHTML=data
-})
+window.addEventListener('scroll', showEl);
+
+function showEl(){
+	var showing = document.querySelectorAll('.showSec');
+
+	for(var i = 0; i < showing.length; i++){
+		var windowheight = window.innerHeight;
+		var showtop = showing[i].getBoundingClientRect().top;
+		var showpoint = 180;	
+
+		if(showtop < windowheight - showpoint){
+			showing[i].classList.add('active');
+		}else{
+			showing[i].classList.remove('active');
+		}
+
+
+	}
+}
