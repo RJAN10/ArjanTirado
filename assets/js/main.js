@@ -137,3 +137,10 @@
 			});
 
 })(jQuery);
+
+const globalnav = document.querySelector('.navbar')
+fetch('/navbar.html')
+.then(res=>res.text())
+.then(data=>{
+	globalnav.innerHTML=data
+})
