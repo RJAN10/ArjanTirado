@@ -2659,7 +2659,6 @@ body.is-menu-visible #menu .inner {
   opacity: 1;
 }
 
-/* Banner */
 #banner {
   padding: 10em 0 4.75em 0;
   height: 100vh;
@@ -2679,9 +2678,9 @@ body.is-menu-visible #menu .inner {
   cursor: default;
   display: inline-block;
   height: 2.25em;
-  line-height: 2.25em;
+  line-height: 2.35em;
   text-align: center;
-  width: 2.25em;
+  width: 2.35em;
 }
 #banner img {
   transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
