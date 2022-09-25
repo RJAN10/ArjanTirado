@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -14,14 +14,15 @@
 		<noscript><link rel="stylesheet" href="assets/sass/noscript.css" /></noscript>
 	</head>
 
-	<body class="is-preload">
+	<body class="is-preload">	  
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
 				<!-- Header -->
 					<header id="header" class="alt">
 						<div class="cont">
-							<h1><a href="index.html"><img src="images/Whole logo white.png" alt="" class="inLogo"></a></h1>
+							<!-- <h1><a href="index.html"><img src="images/Whole logo white.png" alt="" class="inLogo"></a></h1> -->
+							<h1>Arjan Tirado</h1>
 						</div>
 						<nav style="display:none;">
 							<a href="#menu">Menu <i class="bi bi-list"></i></a>
@@ -138,24 +139,37 @@
 						<div class="inner">
 							<h2 class="major">Get in touch</h2>
 							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
+							<form method="post" action="#" id="form">
+								<div class="row gtr-uniform">
+									<div class="col-6 col-12-xsmall">
+										<label for="demo-name">Name</label>
+										<input type="text" name="demo-name" id="demo-name" value="" />
 									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
+									<div class="col-6 col-12-xsmall">
+										<label for="demo-email">Email</label>
+										<input type="email" name="demo-email" id="demo-email" value="" />
 									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
+									<div class="col-12">
+										<label for="demo-category">Category</label>
+										<select name="demo-category" id="demo-category">
+											<option value="">-</option>
+											<option value="1">Manufacturing</option>
+											<option value="1">Shipping</option>
+											<option value="1">Administration</option>
+											<option value="1">Human Resources</option>
+										</select>
+									</div>
+									<div class="col-12">
+										<label for="demo-message">Message</label>
+										<textarea name="demo-message" id="demo-message" rows="6"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
 									</div>
 								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
 							</form>
 							<!-- <ul class="contact">
 								<li class="icon solid fa-home">

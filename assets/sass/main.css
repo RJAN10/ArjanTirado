@@ -1,5 +1,24 @@
 @import 'fontawesome-all.min.css';
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
+::-webkit-scrollbar {
+  width: 12px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.801);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -1613,13 +1632,13 @@ section.special, article.special {
 }
 
 /* Form */
-form {
+#form form {
   margin: 0 0 2em 0;
 }
-form > :last-child {
+#form form > :last-child {
   margin-bottom: 0;
 }
-form > .fields {
+#form form > .fields {
   display: -moz-flex;
   display: -ms-flex;
   display: flex;
@@ -1627,7 +1646,7 @@ form > .fields {
   width: calc(100% + 3em);
   margin: -1.5em 0 2em -1.5em;
 }
-form > .fields > .field {
+#form form > .fields > .field {
   -moz-flex-grow: 0;
   -ms-flex-grow: 0;
   flex-grow: 0;
@@ -1636,31 +1655,31 @@ form > .fields > .field {
   padding: 1.5em 0 0 1.5em;
   width: calc(100% - 1.5em);
 }
-form > .fields > .field.half {
+#form form > .fields > .field.half {
   width: calc(50% - 0.75em);
 }
-form > .fields > .field.third {
+#form form > .fields > .field.third {
   width: calc(100%/3 - 0.5em);
 }
-form > .fields > .field.quarter {
+#form form > .fields > .field.quarter {
   width: calc(25% - 0.375em);
 }
 @media screen and (max-width: 480px) {
-  form > .fields {
+  #form form > .fields {
     width: calc(100% + 3em);
     margin: -1.5em 0 2em -1.5em;
   }
-  form > .fields > .field {
+  #form form > .fields > .field {
     padding: 1.5em 0 0 1.5em;
     width: calc(100% - 1.5em);
   }
-  form > .fields > .field.half {
+  #form form > .fields > .field.half {
     width: calc(100% - 1.5em);
   }
-  form > .fields > .field.third {
+  #form form > .fields > .field.third {
     width: calc(100% - 1.5em);
   }
-  form > .fields > .field.quarter {
+  #form form > .fields > .field.quarter {
     width: calc(100% - 1.5em);
   }
 }
@@ -1783,33 +1802,6 @@ input[type=radio] + label:before {
   text-transform: none !important;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-}
-input[type=checkbox] + label:before,
-input[type=radio] + label:before {
-  background: rgba(255, 255, 255, 0.025);
-  border-radius: 5px;
-  border: solid 2px rgba(255, 255, 255, 0.125);
-  content: "";
-  display: inline-block;
-  font-size: 0.8em;
-  height: 2.0625em;
-  left: 0;
-  line-height: 2.0625em;
-  position: absolute;
-  text-align: center;
-  top: 0;
-  width: 2.0625em;
-}
-input[type=checkbox]:checked + label:before,
-input[type=radio]:checked + label:before {
-  background: #ffffff;
-  border-color: #ffffff;
-  content: "\f00c";
-  color: #2e3141;
-}
-input[type=checkbox]:focus + label:before,
-input[type=radio]:focus + label:before {
-  border-color: #4c5c96;
 }
 
 input[type=checkbox] + label:before {
@@ -2436,6 +2428,7 @@ button,
 #header h1 {
   transition: opacity 0.2s ease-in-out, visibility 0.2s;
   border-bottom: 0;
+  font-family: "Autorich Sans";
   font-size: 0.8em;
   margin-bottom: 0;
   opacity: 1;
