@@ -54,7 +54,8 @@
 				@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
 				border-radius: 100%;
 				border: solid 2px _palette(border);
-				content: '\f105';
+				font-family: 'Bootstrap-icons';
+				content: '\F1C5';
 				display: inline-block;
 				font-size: 1.25em;
 				height: 2em;
