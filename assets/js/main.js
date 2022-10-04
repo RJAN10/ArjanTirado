@@ -146,7 +146,7 @@ function showEl(){
 	for(var i = 0; i < showing.length; i++){
 		var windowheight = window.innerHeight;
 		var showtop = showing[i].getBoundingClientRect().top;
-		var showpoint = 180;	
+		var showpoint = 100;	
 
 		if(showtop < windowheight - showpoint){
 			showing[i].classList.add('active');
@@ -157,3 +157,7 @@ function showEl(){
 
 	}
 }
+
+$(function(){
+	$("#navsec").load("nav.txt");
+});
