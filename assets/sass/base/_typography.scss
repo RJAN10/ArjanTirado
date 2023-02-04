@@ -212,3 +212,13 @@
 	.align-right {
 		text-align: right;
 	}
+
+	@font-face {
+		font-family: 'AutorichSans';
+		src: local('Autorich Sans Regular'), local('Autorich-Sans-Regular'),
+			url('assets/webfonts/AutorichSans.woff2') format('woff2'),
+			url('assets/webfonts/AutorichSans.woff') format('woff'),
+			url('assets/webfonts/AutorichSans.ttf') format('truetype');
+		font-weight: 400;
+		font-style: normal;
+	  }

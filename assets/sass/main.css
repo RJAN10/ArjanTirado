@@ -333,6 +333,12 @@ hr.major {
   text-align: right;
 }
 
+@font-face {
+  font-family: "AutorichSans";
+  src: local("Autorich Sans Regular"), local("Autorich-Sans-Regular"), url("assets/webfonts/AutorichSans.woff2") format("woff2"), url("assets/webfonts/AutorichSans.woff") format("woff"), url("assets/webfonts/AutorichSans.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 a {
   color: inherit;
 }
@@ -2641,7 +2647,7 @@ button,
 #header h1 {
   transition: opacity 0.2s ease-in-out, visibility 0.2s;
   border-bottom: 0;
-  font-family: "Autorich Sans";
+  font-family: "AutorichSans";
   font-size: 1.8em;
   margin-bottom: 0;
   opacity: 1;
