@@ -2927,6 +2927,32 @@ body.is-menu-visible #menu .inner {
   -ms-user-select: none; /* IE 10 and IE 11 */
   -moz-user-select: none;
        user-select: none; /* Standard syntax */
+  -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes text-pop-up-top {
+  0% {
+    transform: translateY(0);
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    transform: translateY(-50px);
+    transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+@keyframes text-pop-up-top {
+  0% {
+    transform: translateY(0);
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    transform: translateY(-50px);
+    transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
 }
 @-webkit-keyframes rotate-center {
   0% {
@@ -3026,10 +3052,6 @@ body.is-menu-visible #menu .inner {
   }
   #banner .inner {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    height: 50vh;
-    justify-content: flex-end;
   }
 }
 @media screen and (max-width: 736px) {
@@ -3050,8 +3072,18 @@ body.is-menu-visible #menu .inner {
     width: 5.8em;
   }
   #banner p {
-    font-size: 1em;
+    font-size: 0.6em;
     text-align: center;
+  }
+  #banner .inner .BannerMainTitleName h1 {
+    font-size: 2em;
+  }
+  #banner .inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: flex-end;
   }
 }
 body.is-preload #banner .logo {
