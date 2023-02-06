@@ -14,15 +14,18 @@
 			@include vendor('transform', 'translateY(0)');
 			opacity: 1;
 			// margin: 0 0 (_size(element-margin) * 0.65) 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			img {
 				border-radius: 100%;
-				border: solid 2px _palette(border);
+				border: solid 2px _palette(dark);
 				cursor: pointer;
 				display: inline-block;
-				height: 2.35em;
+				height: 2.65em;
 				line-height: 2.35em;
 				text-align: center;
-				width: 2.35em;
+				width: 2.65em;
 				user-select: none;
 				-webkit-user-select: none; /*Safari*/
 				-moz-user-select: none; /*Firefox*/
@@ -33,6 +36,26 @@
 			user-select: none;
 			-webkit-user-select: none; /*Safari*/
 			-moz-user-select: none; /*Firefox*/
+			}
+		}
+
+		.inner .BannerMainTitleName{
+			// height: 200px;
+			display: flex;
+			justify-content: space-evenly;
+			// align-items: center;
+			text-align: center;
+			cursor: pointer;
+			h1{
+				width: 100%;
+				font-family: "Autorich Sans";
+				font-size: 7vw;
+				margin: 0;
+				color: _palette(light);
+				-webkit-user-select: none; /* Safari */
+				-ms-user-select: none; /* IE 10 and IE 11 */
+				user-select: none; /* Standard syntax */
+				
 			}
 		}
 
@@ -114,11 +137,13 @@
 			@include vendor('transition-delay', '0.8s');
 			@include vendor('filter', 'blur(0)');
 			opacity: 1;
+			color: _palette(dark);
 			font-family: _font(family-heading);
 			font-size: 1em;
 			font-weight: _font(weight-heading);
 			letter-spacing: _font(kern-heading);
 			line-height: 2;
+			text-align: center;
 			text-transform: uppercase;
 			cursor: pointer;
 			user-select: none;
@@ -131,8 +156,9 @@
 
 			background-color:		_palette(bg);
 
-			background-image:		linear-gradient(to top, transparentize(_palette(bg), 0.2), transparentize(_palette(bg), 0.2)),
-									url('../../images/bg.jpg');
+								// linear-gradient(to top, transparentize(_palette(bg), 0.2), transparentize(_palette(bg), 0.2)),
+			background-image:		
+									url('../../images/GradientBGorange1.png');
 
 			background-size:		auto,
 									cover;
@@ -150,6 +176,8 @@
 
 			.inner {
 				width: 100%;
+				display: flex;
+				flex-direction: column;
 			}
 		}
 
@@ -174,7 +202,7 @@
 			}
 
 			p {
-				font-size: 0.8em;
+				font-size: 1em;
 				text-align: center;
 			}
 		}

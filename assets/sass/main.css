@@ -107,7 +107,7 @@ html {
 
 body {
   background-color: #2e3141;
-  background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+  background-image: url("../../images/GradientBGorange1.png");
   background-size: auto, cover;
   background-attachment: fixed, fixed;
   background-position: center, center;
@@ -166,7 +166,7 @@ a.special:not(.button) {
   text-decoration: none;
   border-bottom: 0;
   display: block;
-  font-family: Raleway, Helvetica, sans-serif;
+  font-family: "Inder", sans-serif;
   font-size: 0.8em;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -223,7 +223,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
-  font-family: Raleway, Helvetica, sans-serif;
+  font-family: "Inder", sans-serif;
   font-weight: 700;
   letter-spacing: 0.1em;
   margin: 0 0 1em 0;
@@ -1907,7 +1907,7 @@ section.special, article.special {
 label {
   color: #ffffff;
   display: block;
-  font-family: Raleway, Helvetica, sans-serif;
+  font-family: "Inder", sans-serif;
   font-size: 0.8em;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -2466,7 +2466,7 @@ button,
   color: #ffffff !important;
   cursor: pointer;
   display: inline-block;
-  font-family: Raleway, Helvetica, sans-serif;
+  font-family: "Inder", sans-serif;
   font-size: 0.8em;
   font-weight: 700;
   height: 3.75em;
@@ -2647,7 +2647,7 @@ button,
 #header h1 {
   transition: opacity 0.2s ease-in-out, visibility 0.2s;
   border-bottom: 0;
-  font-family: "AutorichSans";
+  font-family: "Autorich Sans";
   font-size: 1.8em;
   margin-bottom: 0;
   opacity: 1;
@@ -2657,7 +2657,7 @@ button,
   border: 0;
 }
 #header nav {
-  font-family: Raleway, Helvetica, sans-serif;
+  font-family: "Inder", sans-serif;
   font-size: 0.8em;
   font-weight: 700;
   height: 3em;
@@ -2834,7 +2834,7 @@ button,
   border-radius: 5px;
   border: 0;
   display: block;
-  font-family: Raleway, Helvetica, sans-serif;
+  font-family: "Inder", sans-serif;
   font-size: 0.8em;
   font-weight: 200;
   letter-spacing: 0.1em;
@@ -2883,16 +2883,19 @@ body.is-menu-visible #menu .inner {
   transition: opacity 2s ease, transform 1s ease;
   transform: translateY(0);
   opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #banner .logo img {
   border-radius: 100%;
-  border: solid 2px rgba(255, 255, 255, 0.125);
+  border: solid 2px #303C6C;
   cursor: pointer;
   display: inline-block;
-  height: 2.35em;
+  height: 2.65em;
   line-height: 2.35em;
   text-align: center;
-  width: 2.35em;
+  width: 2.65em;
   -ms-user-select: none;
       user-select: none;
   -webkit-user-select: none; /*Safari*/
@@ -2905,6 +2908,23 @@ body.is-menu-visible #menu .inner {
       user-select: none;
   -webkit-user-select: none; /*Safari*/
   -moz-user-select: none; /*Firefox*/
+}
+#banner .inner .BannerMainTitleName {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  cursor: pointer;
+}
+#banner .inner .BannerMainTitleName h1 {
+  width: 100%;
+  font-family: "Autorich Sans";
+  font-size: 7vw;
+  margin: 0;
+  color: #D2FDFF;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none; /* Standard syntax */
 }
 @-webkit-keyframes rotate-center {
   0% {
@@ -2973,11 +2993,13 @@ body.is-menu-visible #menu .inner {
   -ms-filter: blur(0);
   filter: blur(0);
   opacity: 1;
-  font-family: Raleway, Helvetica, sans-serif;
+  color: #303C6C;
+  font-family: "Inder", sans-serif;
   font-size: 1em;
   font-weight: 200;
   letter-spacing: 0.1em;
   line-height: 2;
+  text-align: center;
   text-transform: uppercase;
   cursor: pointer;
   -ms-user-select: none;
@@ -2989,7 +3011,7 @@ body.is-menu-visible #menu .inner {
   #banner {
     padding: 7em 0 8.25em 0;
     background-color: #2e3141;
-    background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+    background-image: url("../../images/GradientBGorange1.png");
     background-size: auto, cover;
     background-position: center, center;
     margin-bottom: -6.5em;
@@ -3002,6 +3024,8 @@ body.is-menu-visible #menu .inner {
   }
   #banner .inner {
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 736px) {
@@ -3022,7 +3046,7 @@ body.is-menu-visible #menu .inner {
     width: 5.8em;
   }
   #banner p {
-    font-size: 0.8em;
+    font-size: 1em;
     text-align: center;
   }
 }
@@ -3060,7 +3084,7 @@ body.is-preload #banner p {
   padding-bottom: 0.4em;
 }
 #wrapper > header p {
-  font-family: Raleway, Helvetica, sans-serif;
+  font-family: "Inder", sans-serif;
   font-size: 1em;
   font-weight: 200;
   letter-spacing: 0.1em;
