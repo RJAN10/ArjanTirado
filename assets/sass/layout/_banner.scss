@@ -48,12 +48,7 @@
 			cursor: pointer;
 			h1{
 				width: 100%;
-				// font-family: _font(Auto) !important;
-				font-family: 'Autorich Sans';
-				src: local('Autorich Sans Regular'), local('Autorich-Sans-Regular'),
-					url('AutorichSans.woff2') format('woff2'),
-					url('AutorichSans.woff') format('woff'),
-					url('AutorichSans.ttf') format('truetype');
+				font-family: AutorichSans;
 				font-weight: 400;
 				font-style: normal;
 				font-size: 7vw;
