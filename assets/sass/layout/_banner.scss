@@ -25,7 +25,7 @@
 				height: 2.65em;
 				line-height: 2.35em;
 				text-align: center;
-				width: 2.35em;
+				width: 2.65em;
 				user-select: none;
 				-webkit-user-select: none; /*Safari*/
 				-moz-user-select: none; /*Firefox*/
@@ -48,7 +48,14 @@
 			cursor: pointer;
 			h1{
 				width: 100%;
-				font-family: _font(Auto) !important;
+				// font-family: _font(Auto) !important;
+				font-family: 'Autorich Sans';
+				src: local('Autorich Sans Regular'), local('Autorich-Sans-Regular'),
+					url('AutorichSans.woff2') format('woff2'),
+					url('AutorichSans.woff') format('woff'),
+					url('AutorichSans.ttf') format('truetype');
+				font-weight: 400;
+				font-style: normal;
 				font-size: 7vw;
 				margin: 0;
 				color: _palette(light);

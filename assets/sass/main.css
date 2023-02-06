@@ -2895,7 +2895,7 @@ body.is-menu-visible #menu .inner {
   height: 2.65em;
   line-height: 2.35em;
   text-align: center;
-  width: 2.35em;
+  width: 2.65em;
   -ms-user-select: none;
       user-select: none;
   -webkit-user-select: none; /*Safari*/
@@ -2917,7 +2917,10 @@ body.is-menu-visible #menu .inner {
 }
 #banner .inner .BannerMainTitleName h1 {
   width: 100%;
-  font-family: "Autorich Sans" !important;
+  font-family: "Autorich Sans";
+  src: local("Autorich Sans Regular"), local("Autorich-Sans-Regular"), url("AutorichSans.woff2") format("woff2"), url("AutorichSans.woff") format("woff"), url("AutorichSans.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
   font-size: 7vw;
   margin: 0;
   color: #D2FDFF;
