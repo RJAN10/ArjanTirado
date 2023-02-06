@@ -25,7 +25,7 @@
 				height: 2.65em;
 				line-height: 2.35em;
 				text-align: center;
-				width: 2.65em;
+				width: 2.35em;
 				user-select: none;
 				-webkit-user-select: none; /*Safari*/
 				-moz-user-select: none; /*Firefox*/
@@ -48,7 +48,7 @@
 			cursor: pointer;
 			h1{
 				width: 100%;
-				font-family: "Autorich Sans";
+				font-family: "Autorich Sans" !important;
 				font-size: 7vw;
 				margin: 0;
 				color: _palette(light);
