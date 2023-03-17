@@ -83,10 +83,6 @@ input, select, textarea {
   -webkit-appearance: none;
   appearance: none;
 }
-
-@-ms-viewport {
-  width: device-width;
-}
 body {
   -ms-overflow-style: scrollbar;
   scroll-behavior: smooth;
@@ -113,7 +109,6 @@ body {
   background-position: center, center;
 }
 body.is-preload *, body.is-preload *:before, body.is-preload *:after {
-  -webkit-animation: none !important;
   animation: none !important;
   transition: none !important;
 }
@@ -2263,17 +2258,17 @@ ul.actions.fit.stacked {
     padding-top: 0;
   }
   ul.actions:not(.fixed) li input[type=submit],
-ul.actions:not(.fixed) li input[type=reset],
-ul.actions:not(.fixed) li input[type=button],
-ul.actions:not(.fixed) li button,
-ul.actions:not(.fixed) li .button {
+  ul.actions:not(.fixed) li input[type=reset],
+  ul.actions:not(.fixed) li input[type=button],
+  ul.actions:not(.fixed) li button,
+  ul.actions:not(.fixed) li .button {
     width: 100%;
   }
   ul.actions:not(.fixed) li input[type=submit].icon:before,
-ul.actions:not(.fixed) li input[type=reset].icon:before,
-ul.actions:not(.fixed) li input[type=button].icon:before,
-ul.actions:not(.fixed) li button.icon:before,
-ul.actions:not(.fixed) li .button.icon:before {
+  ul.actions:not(.fixed) li input[type=reset].icon:before,
+  ul.actions:not(.fixed) li input[type=button].icon:before,
+  ul.actions:not(.fixed) li button.icon:before,
+  ul.actions:not(.fixed) li .button.icon:before {
     margin-left: -0.5rem;
   }
 }
@@ -2563,10 +2558,10 @@ button:disabled,
 }
 @media screen and (max-width: 480px) {
   input[type=submit],
-input[type=reset],
-input[type=button],
-button,
-.button {
+  input[type=reset],
+  input[type=button],
+  button,
+  .button {
     padding: 0;
   }
 }
@@ -2774,7 +2769,6 @@ button,
   transition: opacity 0.35s ease, visibility 0.35s;
   -moz-user-select: none;
   -webkit-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background: rgba(46, 49, 65, 0.8);
@@ -2896,16 +2890,13 @@ body.is-menu-visible #menu .inner {
   line-height: 2.35em;
   text-align: center;
   width: 2.65em;
-  -ms-user-select: none;
-      user-select: none;
+  user-select: none;
   -webkit-user-select: none; /*Safari*/
   -moz-user-select: none; /*Firefox*/
 }
 #banner .logo img:hover {
-  -webkit-animation: rotate-center 0.6s ease-in-out both;
   animation: rotate-center 0.6s ease-in-out both;
-  -ms-user-select: none;
-      user-select: none;
+  user-select: none;
   -webkit-user-select: none; /*Safari*/
   -moz-user-select: none; /*Firefox*/
 }
@@ -2923,24 +2914,10 @@ body.is-menu-visible #menu .inner {
   font-size: 7vw;
   margin: 0;
   color: #D2FDFF;
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
+  -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
   -moz-user-select: none;
        user-select: none; /* Standard syntax */
-  -webkit-animation: text-pop-up-top 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
   animation: text-pop-up-top 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
-}
-@-webkit-keyframes text-pop-up-top {
-  0% {
-    transform: translateY(0);
-    transform-origin: 50% 50%;
-    text-shadow: none;
-  }
-  100% {
-    transform: translateY(-50px);
-    transform-origin: 50% 50%;
-    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
-  }
 }
 @keyframes text-pop-up-top {
   0% {
@@ -2952,14 +2929,6 @@ body.is-menu-visible #menu .inner {
     transform: translateY(-50px);
     transform-origin: 50% 50%;
     text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
-  }
-}
-@-webkit-keyframes rotate-center {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 @keyframes rotate-center {
@@ -2983,25 +2952,12 @@ body.is-menu-visible #menu .inner {
   padding-bottom: -0.4em;
   image-rendering: auto;
   image-rendering: crisp-edges;
-  -ms-interpolation-mode: nearest-neighbor;
-      image-rendering: -moz-crisp-edges;
-      image-rendering: pixelated;
+  image-rendering: pixelated;
   image-rendering: -webkit-optimize-contrast;
 }
 #banner .hometext-logo {
-  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   width: 10em;
-}
-@-webkit-keyframes scale-in-center {
-  0% {
-    transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
 }
 @keyframes scale-in-center {
   0% {
@@ -3030,8 +2986,7 @@ body.is-menu-visible #menu .inner {
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
-  -ms-user-select: none;
-      user-select: none;
+  user-select: none;
   -webkit-user-select: none; /*Safari*/
   -moz-user-select: none; /*Firefox*/
 }
@@ -3304,26 +3259,11 @@ body.is-preload #banner p {
   overflow: hidden;
   flex: 1;
   transform: translatey(0px);
-  -webkit-animation: float 6s ease-in-out infinite;
-          animation: float 6s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite;
 }
 .wrapper.spotlight .image img {
   border-radius: 100%;
   width: 100%;
-}
-@-webkit-keyframes float {
-  0% {
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.637);
-    transform: translatey(0px);
-  }
-  50% {
-    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.267);
-    transform: translatey(-20px);
-  }
-  100% {
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.63);
-    transform: translatey(0px);
-  }
 }
 @keyframes float {
   0% {
@@ -3533,7 +3473,7 @@ body.is-preload #banner p {
 @media screen and (max-width: 1280px) {
   #footer {
     background-color: #2e3141;
-    background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+    background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/GradientBGorange1.png");
     background-size: auto, cover;
     background-position: center, center;
     margin-top: -6.5em;
